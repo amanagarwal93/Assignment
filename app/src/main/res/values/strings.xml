@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Assignment</string>
+
+    <string name="facebook_app_id">693990138113000</string>
+    <string name="fb_login_protocol_scheme">fb693990138113000</string>
+    <string name="image_video_display">Image / Video Display</string>
+    <string name="download_files">Download Files</string>
+    <string name="track_location">Track Location</string>
+    <string name="login_options">Login Options</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

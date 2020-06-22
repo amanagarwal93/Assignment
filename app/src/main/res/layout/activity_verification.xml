@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".login.VerificationActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/varela"
+            android:text="Enter 6 digit OTP sent to your mobile"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinView1"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/common_padding"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cursorColor="@android:color/black"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="48dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="0dp"
+                app:itemWidth="48dp"
+                app:lineColor="@android:color/black"
+                app:lineWidth="2dp"
+                app:viewType="rectangle">
+
+                <requestFocus />
+            </com.chaos.view.PinView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/verifyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/white"
+            android:text="Verify"
+            android:visibility="gone"
+            android:layout_below="@+id/linearLayout"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/resendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@android:color/white"
+            android:text="Resend OTP ?"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/verifyBtn"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</layout>
